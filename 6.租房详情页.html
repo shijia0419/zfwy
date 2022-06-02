@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/租房详情页 .css">
+    <script src=""></script>
+</head>
+
+<body>
+    <div class="header">
+        <p>
+            <a href="#"><span class="my"></span></a>
+            <a href="#"><span class="app"></span></a>
+        </p>
+       
+    </div>
+    <div class="tit_bg">
+        <p><a href="" class="tit1">首页</a>><a href="">北京租房</a>><a href="">房源信息</a></p>
+    </div>
+    <div class="banner">
+        <img src="./img/rentalList/banner.png" alt="">
+        <p><a href="">分享</a> </p>
+    </div>
+    <div class="biaoti">
+        <h3>天鹅湾小区精装两居，满五唯一，业主换房急售</h3>
+        <span><a href="">关注</a></span>
+    </div>
+   <ul class="information">
+       <li>
+           <p>租金</p>
+           <p class="color_">2300元/月</p>
+       </li>
+       <li class="line"></li>
+       <li>
+        <p>房型</p>
+        <p class="color_">2室1厅</p>
+    </li>
+    <li class="line"></li>
+    <li>
+        <p>面积</p>
+        <p class="color_">204平米</p>
+    </li>
+   </ul>
+<ul class="information_more">
+    <li>楼层：高楼/17层<span class="im_rig">朝向：南北</span></li>
+    <li>装修：精装<span class="im_rig1">供暖：集体供暖</span></li>
+    <li>年代：2007年<span class="im_rig2">楼型：板楼</span></li>
+</ul>
+<div class="pingjia">
+    <h3>经纪人房评<span><img src="./img/rentalList/right.png" alt=""></span></h3>
+    <p>地理位置：晶都国际处于酒仙桥中心地带，毗邻
+        北京三大商圈，紧邻丽都商圈，隔四环与望京商
+        圈相望，西南紧挨燕莎商圈，地理位置优越。周
+        边配套：颐堤港商业中心，兆维大厦...</p>
+</div>
+<div class="pingjia jilu">
+    <h3>看房客户记录<span><img src="./img/rentalList/right.png" alt=""></span></h3>
+    <p>近一个月新增0位看房客户，共50位</p>
+</div>
+<div class="pingjia address">
+    <h3>位置及周边<span><img src="./img/rentalList/right.png" alt=""></span></h3>
+    <p>地址：[黄村]时代龙和
+        <br><img src="./img/rentalList/map.png" alt=""></p>
+</div>
+<div class="pingjia jilu history">
+    <h3>小区成交历史<span><img src="./img/rentalList/right.png" alt=""></span></h3>
+    <p>3室2厅， 146平米，<span>5000元</span></p>
+    <p>签约日期：2022-06-01</p>
+</div>
+<div class="contant">
+    <span ><img src="./img/rentalList/man.png" alt=""></span>
+    <div>
+        <p>张三</p>
+        <p>400198373623948</p>
+    </div>
+    <span><img src="./img/rentalList/icon1.png" alt=""></span>
+    <span><img src="./img/rentalList/icon2.png" alt=""></span>
+</div>
+    <footer>
+        <p>北京找房无忧><a href="">首页</a></p>
+        <div class="iphone">
+            <div class="iphone_left">
+                <p>iphone</p>
+                <p>客户端</p>
+            </div>
+            <div class="iphone_right">
+                <p>Android</p>
+                <p>客户端</p>
+            </div>
+        </div>
+        <div class="end">
+            <p>北京找房无忧房地产经纪公司</p>
+             <p>网络经营许可证京ICP备20160812号</p>
+        </div>
+      
+    </footer>
+    <div class="tc">
+        <div class="close_" onclick="close_()">
+            <img src="./img/index/close.png" alt="">
+        </div>
+        <div class="tc_left">
+            <img src="./img/index/download.png" alt="">
+        </div>
+        <div class="tc_center">
+            <p class="p1">找房无忧</p>
+            <p>市场行情，一手掌握！</p>
+        </div>
+        <div class="tc_right">
+            免费下载
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="/js/首页.js"></script>
+<script>
+    function setRem() {
+        // 获取默认尺寸  ui 尺寸
+        var ui_w = 375;
+        // 设备的宽
+        var client_w = document.documentElement.clientWidth || document.body.clientWidth;
+
+        console.log(ui_w, client_w);
+
+        // 设置html节点的fontsize
+        var html = document.getElementsByTagName('html')[0];
+        html.style.fontSize = (client_w / ui_w) * 10 + 'px';
+    }
+
+    window.onresize = setRem;
+</script>

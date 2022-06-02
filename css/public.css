@@ -1,100 +1,111 @@
 * {
-    margin: 0;
-    padding: 0;
-  }
-  html,
-  body {
-    width: 100%;
-    background-color: #F5F5F5;
-    position: relative;
-  }
-  .header {
-    width: 100%;
-    height: 5rem;
-    background: url(../img/index/logo.jpg) no-repeat 2rem 0rem;
-    background-color: #FF8A00;
-    overflow: hidden;
-  }
-  .header p {
-    width: 10rem;
-    height: 4rem;
-    background-color: #fff;
-    margin-left: 60%;
-    margin-top: 1rem;
-    background: url(../img/index/xiazai.jpg) no-repeat 4rem 0rem;
-    background-size: contain;
-  }
-  .header p .my {
-    display: block;
-    width: 4rem;
-    height: 4rem;
-    background: url(../img/index/my.jpg) no-repeat;
-    background-size: contain;
-  }
-  footer {
-    width: 100%;
-    height: 11rem;
-    background-color: #2F3130;
-  }
-  footer p {
-    color: gray;
-    text-indent: 1rem;
-    height: 2rem;
-    line-height: 2rem;
-  }
-  footer p a {
-    color: gray;
-    text-decoration: none;
-  }
-  footer .iphone {
-    border-top: 0.1rem solid gray;
-    display: flex;
-    justify-content: space-around;
-  }
-  footer .iphone .iphone_left {
-    background: url(../img/index/apple.png) no-repeat 0rem 0.6rem;
-  }
-  footer .iphone .iphone_left p {
-    text-indent: 2.5rem;
-  }
-  footer .iphone .iphone_right {
-    background: url(../img/index/android.png) no-repeat 0rem 0.6rem;
-  }
-  footer .iphone .iphone_right p {
-    text-indent: 2.5rem;
-  }
-  footer .end {
-    text-align: center;
-    font-size: 0.5rem;
-  }
-  .tc {
-    position: fixed;
-    position: absolute;
-    bottom: 0rem;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    height: 5rem;
-    background: url(../img/index/close.png) no-repeat;
-    background-color: rgba(113, 110, 110, 0.3);
-  }
-  .tc .tc_left {
-    margin-left: 1rem;
-  }
-  .tc .tc_center {
-    color: white;
-  }
-  .tc .tc_center .p1 {
-    font-size: 1.5rem;
-  }
-  .tc .tc_right {
-    width: 10rem;
-    height: 5rem;
-    background-color: #FF8A00;
-    text-align: center;
-    line-height: 5rem;
-    font-size: 1.8rem;
-    color: white;
-  }
-  
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  background-color: #F5F5F5;
+  position: relative;
+  font-size: 10px;
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+.header {
+  height: 6rem;
+  background: url(../img/index/logo.jpg) no-repeat 2rem 0rem;
+  background-size: contain;
+  background-color: #FF8A00;
+  overflow: hidden;
+}
+.header p {
+  width: 10rem;
+  height: 4rem;
+  background-color: #fff;
+  margin-left: 25rem;
+  margin-top: 1rem;
+  background: url(../img/index/xiazai.jpg) no-repeat 5rem 0rem;
+  background-size: contain;
+}
+.header p .my {
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  background: url(../img/index/my.jpg) no-repeat 1rem 0rem;
+  background-size: contain;
+}
+footer {
+  width: 100%;
+  /* height: 12rem; */
+  background-color: #2F3130;
+}
+footer p {
+  color: gray;
+  text-indent: 1rem;
+  height: 3rem;
+  line-height: 3rem;
+}
+footer p a {
+  color: gray;
+  text-decoration: none;
+}
+footer .iphone {
+  border-top: 0.1rem solid gray;
+  display: flex;
+  justify-content: space-around;
+}
+footer .iphone .iphone_left {
+  background: url(../img/index/apple.png) no-repeat 0rem 0.6rem;
+}
+footer .iphone .iphone_left p {
+  text-indent: 5rem;
+}
+footer .iphone .iphone_right {
+  background: url(../img/index/android.png) no-repeat 0rem 0.6rem;
+}
+footer .iphone .iphone_right p {
+  text-indent: 5rem;
+}
+footer .end {
+  text-align: center;
+  font-size: 0.5rem;
+}
+.tc {
+  position: fixed;
+  bottom: 0rem;
+ 
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 6rem;
+  background-color: rgba(113, 110, 110, 0.3);
+}
+.close_ img{
+  margin-left: -1rem;
+  margin-top: -2rem;
+}
+.tc .tc_left {
+ 
+  margin-left: 1rem;
+}
+.tc .tc_center {
+
+  color: white;
+}
+.tc .tc_center .p1 {
+  font-size: 1.5rem;
+}
+.tc .tc_right {
+  float: left;
+  width: 10rem;
+  height: 5rem;
+  background-color: #FF8A00;
+  text-align: center;
+  line-height: 5rem;
+  font-size: 1.8rem;
+  color: white;
+}

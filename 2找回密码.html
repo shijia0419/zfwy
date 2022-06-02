@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>找回密码</title>
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/找回密码.css">
+    <script src=""></script>
+</head>
+
+<body>
+    <div class="header">
+        <p>
+            <a href="#"><span class="my"></span></a>
+            <a href="#"><span class="app"></span></a>
+        </p>
+       
+    </div>
+    <div class="tit_bg">
+        <p><a href="" class="tit1">首页</a>><a href="">找回密码</a></p>
+    </div>
+    <form action="">
+        <p><input type="text" placeholder="请输入手机号" class="tel"></p>
+        <p><input type="text" placeholder="请输入短信中的验证码" class="yz"><span class="send">发送验证码</span></p>
+         <p><input type="password" placeholder="请输入新密码" class="psd"></p>
+         <p><input type="password" placeholder="请输入确认密码" class="psd1"></p>
+         <button>提 交</button>
+     </form>
+</body>
+
+</html>
+<script src="./js/首页.js"></script>
+<script src="./js/找回密码.js"></script>
+<script>
+    function setRem() {
+        // 获取默认尺寸  ui 尺寸
+        var ui_w = 375;
+        // 设备的宽
+        var client_w = document.documentElement.clientWidth || document.body.clientWidth;
+
+        // console.log(ui_w, client_w);
+
+        // 设置html节点的fontsize
+        var html = document.getElementsByTagName('html')[0];
+        html.style.fontSize = (client_w / ui_w) * 10 + 'px';
+    }
+
+    window.onresize = setRem;
+</script>
