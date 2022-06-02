@@ -1,0 +1,53 @@
+.rentalAddr{
+    height: 0.36rem;
+    line-height: 0.36rem;
+    background: #ffffff;
+    border-bottom: 1px solid #c5c5c5;
+    padding-left: 0.15rem;
+}
+
+.ueserLogin{
+    width: 100%;
+    height: 1.4rem;
+    background: url(../img/my/bg2.png) no-repeat 0 0;
+    background-size: contain;
+}
+.ueserLogin .ueser{
+    width: 0.54rem;
+    height: 0.54rem;
+    margin-left: 1.33rem;
+    margin-top: 0.18rem;
+}
+.ueserLogin p{
+    text-align: center;
+    margin-top: 0.28rem;
+    color: #fff;
+}
+.myLoginList{
+    background-color: #fff;
+    border-bottom: 1px solid #dcdcdc;
+}
+.myLoginList li a{
+    display: block;
+    height: 0.43rem;
+    line-height: 0.43rem;
+    border-bottom: 1px solid #dcdcdc;
+    background: url(../img/my/right.png) right center no-repeat;
+    background-size: 0.07rem 0.14rem;
+    margin-right: 0.24rem;
+    margin-left: 0.14rem;
+}
+.myLoginList li:nth-of-type(3) a{
+    border-bottom: none;
+}
+.loginBtn{
+    display: inline-block;
+    width: 2.99rem;
+    height: 0.38rem;
+    background-color: #fff;
+    color: #ff8a00;
+    border: 1px solid #dcdcdc;
+    text-align: center;
+    line-height: 0.38rem;
+    margin: 0.3rem 0.1rem;
+}

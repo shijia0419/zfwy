@@ -1,0 +1,65 @@
+boy{
+    background-color: #f5f5f5;
+}
+.head{
+    outline: 1px solid red;
+    position: relative;
+}
+.head .bg{
+    width: 100%;
+    vertical-align: top;
+}
+.downList{
+    position: absolute;
+    top: 0.12rem;
+    right: 0.16rem;
+}
+.downList a{
+    color: #fff;
+    margin-left: 0.2rem;
+    height: 0.32rem;
+    display: inline-block;
+    padding-top: 0.2rem;
+    box-sizing: border-box;
+    text-align: center;
+}
+.downList a:first-of-type{
+    background: url(../img/my/urse.png) center 0 no-repeat;
+    background-size: 0.14rem 0.15rem;
+}
+.downList a:last-of-type{
+    background: url(../img/my/down.png) center 0 no-repeat;
+    background-size: 0.14rem 0.15rem;
+}
+.head .logo{
+    width: 0.53rem;
+    height: 0.53rem;
+    position: absolute;
+    left: 1.33rem;
+    top: 0.58rem;
+}
+.head .login{
+    position: absolute;
+    left: 1.23rem;
+    bottom: 0.29rem;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 0.06rem 0.25rem;
+}
+
+.userList{
+    margin-top: 0.12rem;
+    background: #fff;
+    padding: 0 0.2rem;
+}
+.userList li{
+    height: 0.48rem;
+    line-height: 0.48rem;
+    border-bottom: 1px solid #dcdcdc;
+    background: url(../img/my/right.png) no-repeat center right;
+    background-size: 0.07rem 0.14rem;
+}
+.userList img{
+    width: 0.16rem;
+    height: 0.16rem;
+}

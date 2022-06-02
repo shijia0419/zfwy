@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>找房无忧-注册</title>
+    <link rel="stylesheet" href="./css/my.css">
+    <link rel="stylesheet" href="./css/注册.css">
+    <script src=""></script>
+</head>
+
+<body>
+    <header>
+        <h1><a href="#"><img src="img/index/logo.jpg" alt="" /></a></h1>
+        <div class="icon">
+            <a href="#"><img src="img/index/my.jpg" alt="" /></a>
+            <a href="#"><img src="img/index/xiazai.jpg" alt="" /></a>
+        </div>
+    </header>
+
+</body>
+<section class="rentalAddr">
+    <p><strong><a href="">首页</a> </strong> > <span><a href="">我的</a> </span> > <span>注册</span></p>
+</section>
+<section class="registerForm">
+    <form action="">
+        <ul>
+            <li class="mima">
+                <input type="text" placeholder="请输入手机号码" />
+                <a id="code" href="#">发送验证码</a>
+            </li>
+            <li><input type="text" placeholder="请输入短信中的验证码" /></li>
+            <li><input type="text" placeholder="请输入新密码" /></li>
+        </ul>
+        <input class="registerBtn" type="submit" value="立即注册" onclick="fu()" />
+    </form>
+</section>
+
+</html>
+<script src="./js/rem.js"></script>
+<script>
+    var input_ = document.getElementsByTagName('input')[0];
+    var input1 = document.getElementsByTagName('input')[1];
+    var input2 = document.getElementsByTagName('input')[2];
+    var regis = document.getElementsByClassName('registerBtn')[0];
+    var code_ = document.getElementById('code');
+    var agg = 0;
+    // code_.onclick = function () {
+    //     // var va = document.getElementsByTagName('input')[0].value;
+    //     var reg = /^(0|86|17951)?(13[0-9]|15[012356789]|166|17[3678]|18[0-9]|14[57])[0-9]{8}$/;
+    //     if (input_.value=='') {
+    //         // console.log(input_.value);
+    //         alert('手机号不能为空');
+    //         return false;
+
+    //     } else if (!reg.test(input_.value)) {
+    //         alert('手机号码输入有误')
+    //         return false;
+
+    //     }else{
+    //         agg++;
+    //         fu(agg)
+    //         return true;
+    //     }
+    // }
+    var num = 0;
+    var timer = null;
+
+    code_.onclick = function () {
+
+        var reg = /^(0|86|17951)?(13[0-9]|15[012356789]|166|17[3678]|18[0-9]|14[57])[0-9]{8}$/;
+        if (input_.value == '') {
+            // console.log(input_.value);
+            alert('手机号不能为空');
+            return false;
+
+        } else if (!reg.test(input_.value)) {
+            alert('手机号码输入有误')
+            return false;
+
+        } else {
+            agg++;
+            fu(agg)
+            var num1 = 60;
+
+            timer = setInterval(function () {
+                num1--;
+                code_.innerHTML = num1 + 's';
+
+                if (num1 == 57) {
+                    num = Math.floor(Math.random() * 1000000);
+                    alert('你的验证码为：' + num);
+                    clearInterval(timer);
+                    code_.innerHTML = '重获验证码';
+                } else {
+                    code_.innerHTML = num1 + '重获验证码';
+                    agg++;
+                    fu(agg)
+                }
+            }, 1000)
+            return true;
+        }
+    }
+
+
+
+
+
+
+
+
+
+    // clearInterval(timer);
+
+    // if(num1==55){
+    //     alert('8888')
+    //     clearInterval(timer)
+    // code_.innerHTML=num1;
+    // num1=60;
+    // code_.style.pinterEvents='';
+    // code_.innerHTML='1 2 3 4 5 6';
+    // }
+    // else{
+    //     code_.innerHTML=num1+'秒后可重新发送';
+    // }
+
+    //    for(var i=0;i<6;i++){
+
+    // num.push(num2)
+    //    }
+    // num=num.join('')
+
+    input2.onclick = function () {
+        if (input1.value != num) {
+            alert('验证码输入有误')
+        } else {
+            agg++;
+            fu(agg)
+        }
+    }
+
+    var arr = /^\w{8,12}$/;
+    input2.onmouseleave = function () {
+        if (!arr.test(input2.value)) {
+            alert('请输入8-12位有效密码')
+            return false;
+
+        } else {
+            agg++;
+            fu(agg)
+        }
+    }
+
+    // regis.style.disabled = 'disabled';
+
+    function fu(a) {
+
+        // regis.removeAttribute('disabled');
+        console.log(a);
+        regis.onclick = function () {
+            if (a > 4) {
+                alert('注册成功')
+                location.href = '#'
+            } else {
+                agg--;
+                alert('输入错误')
+
+            }
+        }
+
+    }
+</script>
+<!-- location.href='' -->
