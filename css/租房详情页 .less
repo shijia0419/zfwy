@@ -57,7 +57,14 @@
         font-size: 1.4rem;
         line-height: 8rem;
         text-align: center;
-        background: url(../img/rentalList/xin.png) no-repeat 1rem .3rem;
+        position: relative;
+        // background: url(../img/rentalList/xin.png) no-repeat 1rem .3rem;
+        .xin{
+            position: absolute;
+           width: 2.5rem;
+           top: 0rem;
+           right: 2.1rem;
+        }
         a{
             color: rgb(162, 162, 162);
 
@@ -138,34 +145,45 @@
     height: 7rem;
 }
 .address{
-    height: 18rem;
+    height: 24rem;
     // width: 100%;
     p{
-        // width: 90%;
+        width: 90%;
        margin: 0 auto;
         margin-top: .5rem;
+        font-size: 1.4rem;
         // margin-left: 2px;
         font-weight: 600;
         border: .1rem solid rgb(192, 191, 191) ;
+       
         img{
-            width: 20rem;
-            // width: 100%;
+            // width: 20rem;
+            width: 100%;
         }
     }
 }
 .history{
-    p{
+   .his_con{
+       background-color: white;
+       height: 8rem;
+       p{
+        // height: 20rem;
         span{
             color: #FF8A00;
         }
     }
-}
+   }
+      
+    }
+   
+
 .contant{
-    height: 3.8rem;
+    height: 5rem;
     background-color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 5rem;
     span{
         img{
             width: 3rem;

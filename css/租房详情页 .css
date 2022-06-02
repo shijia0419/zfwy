@@ -54,7 +54,13 @@
   font-size: 1.4rem;
   line-height: 8rem;
   text-align: center;
-  background: url(../img/rentalList/xin.png) no-repeat 1rem 0.3rem;
+  position: relative;
+}
+.biaoti span .xin {
+  position: absolute;
+  width: 2.5rem;
+  top: 0rem;
+  right: 2.1rem;
 }
 .biaoti span a {
   color: #a2a2a2;
@@ -126,26 +132,33 @@
   height: 7rem;
 }
 .address {
-  height: 18rem;
+  height: 24rem;
 }
 .address p {
+  width: 90%;
   margin: 0 auto;
   margin-top: 0.5rem;
+  font-size: 1.4rem;
   font-weight: 600;
   border: 0.1rem solid #c0bfbf;
 }
 .address p img {
-  width: 20rem;
+  width: 100%;
 }
-.history p span {
+.history .his_con {
+  background-color: white;
+  height: 8rem;
+}
+.history .his_con p span {
   color: #FF8A00;
 }
 .contant {
-  height: 3.8rem;
+  height: 5rem;
   background-color: white;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-top: 5rem;
 }
 .contant span img {
   width: 3rem;
