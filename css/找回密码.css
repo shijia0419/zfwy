@@ -41,7 +41,7 @@ form p:nth-of-type(2) .yzm {
   border-left: 0.1rem solid #c1bcbc;
 }
 form button {
-  width: 70%;
+  width: 100%;
   height: 5rem;
   background-color: #FF8A00;
   border: none;

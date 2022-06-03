@@ -25,7 +25,7 @@
     <p><strong><a href="">首页</a> </strong> > <span><a href="">我的</a> </span> > <span>注册</span></p>
 </section>
 <section class="registerForm">
-    <form action="">
+    <form action="./11.普通登录.html">
         <ul>
             <li class="mima">
                 <input type="text" placeholder="请输入手机号码" />
@@ -34,7 +34,7 @@
             <li><input type="text" placeholder="请输入短信中的验证码" /></li>
             <li><input type="text" placeholder="请输入新密码" /></li>
         </ul>
-        <input class="registerBtn" type="submit" value="立即注册" onclick="fu()" />
+        <input class="registerBtn" type="submit" value="立即注册"  />
     </form>
 </section>
 
@@ -171,5 +171,11 @@
         }
 
     }
+    regis.onclick=function(){
+     if(input_.value==''&&input1.value==''&&input2.value==''){
+       alert('输入内容不能为空')
+       return false;
+     }
+ }
 </script>
 <!-- location.href='' -->

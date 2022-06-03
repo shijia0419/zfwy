@@ -45,7 +45,12 @@ function fu(a) {
     }
 
 }
-
+registerBtn.onclick=function(){
+    if(input.value==''&&input1.value==''){
+      alert('输入内容不能为空')
+      return false;
+    }
+}
 var input3 = document.getElementsByTagName('input')[3];
 var input4 = document.getElementsByTagName('input')[4];
 var registerBtn1 = document.getElementsByClassName('registerBtn')[1];
